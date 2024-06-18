@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>calculator</title>
+    <!-- use in internal style -->
+    <style>
+        .main-box {
+            background-color: gray;
+            height: 70vh;
+            width: 32vw;
+            margin-left: 30%;
+            margin-top: 10%;
+
+
+        }
+
+        .display {
+            height: 15vh;
+            background-color: #434242;
+            width: 32vw;
+           text-align: center;
+           
+
+
+        }
+
+        .key {
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .button {
+            height: 11vh;
+            width: 10vw;
+            background-color: #686D76;
+        }
+
+        .bottom {
+            width: 20vw;
+            background-color: #686D76;
+        }
+
+        .last {
+            background-color: #FFC100;
+            width: 10vw;
+        }
+    </style>
+    <script>
+        function buttonClick(ayush) {
+            document.getElementById("display").innerHTML = ayush;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="display" id="display"></div>
+        <!-- 4 button for first line  -->
+        <div class="key">
+            <button class="button" onclick="buttonClick()">C</button>
+            <button class="button" onclick="buttonClick()">+/-</button>
+            <button class="button" onclick="buttonClick()">%</button>
+            <button class="last" onclick="buttonClick()">÷</button>
+
+        </div>
+        <!-- 4 button for second line  -->
+        <div class="key">
+            <button class="button" onclick="buttonClick(7)">7</button>
+            <button class="button" onclick="buttonClick(8)">8</button>
+            <button class="button" onclick="buttonClick(9)">9</button>
+            <button class="last" onclick="buttonClick()">×</button>
+
+        </div>
+        <!-- 4 button for third line  -->
+        <div class="key">
+            <button class="button" onclick="buttonClick(4)">4</button>
+            <button class="button" onclick="buttonClick(5)">5</button>
+            <button class="button" onclick="buttonClick(6)">6</button>
+            <button class="last" onclick="buttonClick()">-</button>
+
+        </div>
+        <!-- 4 button for fourth line  -->
+        <div class="key">
+            <button class="button" onclick="buttonClick(1)">1</button>
+            <button class="button" onclick="buttonClick(2)">2</button>
+            <button class="button" onclick="buttonClick(3)">3</button>
+            <button class="last" onclick="buttonClick()">+</button>
+
+        </div>
+        <div class="key">
+            <button class="bottom" onclick="buttonClick(0)">0</button>
+            <button class="button" onclick="buttonClick()">.</button>
+            <button class="last" onclick="buttonClick()">=</button>
+
+
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
